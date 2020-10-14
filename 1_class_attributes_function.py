@@ -1,6 +1,7 @@
 class Person:
-    name = 'Ivan'
+    # этот метод будет вызван после создания экземпляра класса
+    def __init__(self, name):
+        self.name = name 
 
-
-# Person.hello()
-print(Person.__dict__)
+    def display(self):
+        print(self.name)
